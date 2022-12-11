@@ -1,0 +1,211 @@
+/*
+  color guide
+  red: #ed5740
+  yellow: #e3b23c
+  green: #63a375
+  blue: #4381c1
+  black: #423e37
+
+*/
+
+/*
+  font-size guide
+  h1: 40px black
+  h2: 30px bold
+  h3: 24px medium
+  h4: 20px regular
+  h5: 16px light
+
+*/
+
+/* header */
+header {
+  /* display: none; */
+  background-color: #fff;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0; left: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  height: 10vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 2rem;
+}
+.logo a {
+  width: 30vw;
+  height: 10vh;
+}
+.logo img {
+  width: 30vw;
+  height: 10vh;
+  object-fit: contain;
+}
+
+.navi {
+  height: 10vh;
+  width: 60vw;
+  display: flex;
+  align-items: bottom;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+.menu li {
+  background-color: #63a375;
+  padding-bottom: 1rem;
+  width: 5rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.menu a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+#inner {
+ /* 전체적으로 너무 커서 조정하고 싶은데 안된다 rem때문인가? */
+}
+/* main: imgslide */
+main.imgslide {
+  width: 100vw;
+  height: 90vh;
+  background-color: #fff;
+  /* border: 10px solid #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imgslide a {
+  background-color: #4381c1;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+}
+.imgslide img {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.imgslide span {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 30rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #efefef;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.banner {
+  height: 20rem;
+  background-color: #ed5740;
+  text-align: center;
+}
+/* section */
+section {
+  width: 100vw;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+section h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: #333;
+  color: #efefef;
+  width: 100vw;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  /* width: 50vw; */
+}
+section li {
+  background-color: #ddd;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section p {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+.price {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+section img {
+  width: 80%;
+}
+
+#etc ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.f_left {
+
+}
+
+.f_left a {
+  color: #efefef;
+}
+.f_left p {
+  color: #efefef;
+  font-size: 0.7rem;
+}
+
+.f_right p {
+  color: #efefef;
+  font-size: 0.7rem;
+  text-align: right;
+}
