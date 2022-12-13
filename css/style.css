@@ -31,6 +31,12 @@ header {
   top: 0; left: 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+header.drop {
+  position: fixed;
+  animation: dropHeader 0.3s ease-in-out;
+  background-color: #fff;
+  z-index: 10;
+}
 
 .logo {
   height: 10vh;
@@ -72,59 +78,53 @@ header {
   text-align: center;
   margin-bottom: 0.5rem;
 }
+
 .menu a {
   font-size: 1.1rem;
   font-weight: 700;
   width: 100%;
 }
 
-#inner {
- /* 전체적으로 너무 커서 조정하고 싶은데 안된다 rem때문인가? */
-}
-/* main: imgslide */
-main.imgslide {
-  width: 100vw;
-  height: 90vh;
-  background-color: #fff;
-  /* border: 10px solid #333; */
+/* main */
+main {
+  background-color: #ccc;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
-
-.imgslide a {
-  background-color: #4381c1;
-  width: 100vw;
-  height: 90vh;
-  position: relative;
-}
-.imgslide img {
-  width: 100vw;
-  height: 90vh;
+main img {
+  width: 50vw;
+  height: 70vh;
   object-fit: cover;
 }
 
-.imgslide span {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 30rem;
-  height: 3rem;
-  line-height: 3rem;
-  color: #efefef;
-  font-weight: 700;
-  font-size: 1.5rem;
+/* 식당 내부 */
+article.restaurant {
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+}
+.imgslide img {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center center;
+  float: left;
 }
 
+/* 중간 배너(설명) */
+
 .banner {
-  height: 20rem;
-  background-color: #ed5740;
+  height: 12rem;
+  background-color: #333;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner p,
+.banner span {
+  color: #efefef;
 }
 /* section */
 section {
