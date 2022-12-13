@@ -15,6 +15,15 @@ window.onscroll = function () {
   }
 };
 
+// 메뉴
+$('.menu > li').mouseover(function(){
+  $('.sub').stop().slideDown(500);
+  $('#subBg').stop().slideDown(400);
+}).mouseout(function(){
+  $('.sub').stop().slideUp(500);
+  $('#subBg').stop().slideUp(600);
+});
+
 
 // 이미지슬라이드
 
@@ -24,3 +33,4 @@ setInterval(function(){
                                 .next('li').fadeIn(200)
                                 .end().appendTo('.imgslide');
 },3000);
+
